@@ -1,0 +1,137 @@
+﻿
+@{
+    ViewBag.Title = "Math";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<p>If you click on me, I will disappear.</p>
+<p>Click me away!</p>
+<p>Click me too!</p>
+
+
+<h5>this ia array sorting</h5>
+<div>
+    <h2>JavaScript Array Sort</h2>
+
+    <p>The highest number is <span id="demo"></span>.</p>
+    <script>
+        var points = [4000, 100, 10, 5, 25, 10];
+        document.getElementById("demo").innerHTML = myArrayMax(points);
+
+        function myArrayMax(arr) {
+            var len = arr.length;
+            var max = -Infinity;
+            while (len--) {
+                if (arr[len] > max) {
+                    max = arr[len];
+                }
+            }
+            return max;
+        }
+    </script>
+
+</div>
+
+
+<h2>Do Your Math Operations</h2>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="~/Scripts/JQ.js"></script>
+<script src="~/Scripts/jsCheck.js"></script>
+
+
+<div class="form-group">
+    <div class="row">
+        <div class="col-lg-6">
+            Enter First Number:-<input id="no1" type="text" name="value1" style="margin-left:20px" />
+        </div>
+    </div>
+</div>
+
+<div class="form-group">
+    <div class="row">
+        <div class="col-lg-6">
+            Enter Second Number:-<input id="no2" type="text" name="value2" />
+        </div>
+    </div>
+</div>
+
+<div class="form-group">
+    <div class="row">
+        <div class="col-lg-2">
+            <input id="Button1" type="button" value="ADD" class="btn btn-
+lg btn-primary btn-block" onclick='mathoperation("addition");' />
+        </div>
+
+        <div class="col-lg-2">
+            <input id="Button2" type="button" value="SUBTRACT" class="btn btn-lg btn-success btn-block" onclick='mathoperation("subtraction");' />
+        </div>
+
+        <div class="col-lg-2">
+            <input id="Button3" type="button" value="MULTIPLY" class=" btn btn-lg btn-warning btn-block" onclick='mathoperation("multiplication");' />
+        </div>
+
+
+        <div class="col-lg-2">
+            <input id="Button4" type="button" value="DIVIDE" class="btn btn-lg btn-danger btn-block" onclick='mathoperation("division");' />
+        </div>
+
+
+        <div class="col-lg-2">
+            <input id="Button1" type="button" value="Mod" class="btn btn-lg btn-default btn-block" onclick='mathoperation("getmod");' />
+        </div>
+
+    </div>
+</div>
+
+<h1>LETS PERFORM SOME STRING OPERATIONS NOW</h1>
+
+<div>
+    Enter First String::<input id="string1" type="text" />
+    Enter String to find its index::<input id="string2" type="text" /><br />
+    Enter string which you want to add::<input id="string3" type="text" /><br />
+    Enter string which you want to replace::<input id="string4" type="text" /><br />
+
+    <input id="Button1" type="button" value="Get String lenght" onclick="stringlenght();" />
+    <input id="Button2" type="button" value="find index" onclick="stringindex();" />
+    <input id="Button3" type="button" value="replace it" onclick="replace();" />
+</div>
+
+<h1>LETS DO ARRAY FUNCTIONS</h1>
+<div>
+
+    <button id="btn" onclick="sortFunction();">Try it</button>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
